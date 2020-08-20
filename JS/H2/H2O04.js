@@ -19,11 +19,14 @@ function draw() {
   image(strand,strandX,0);
   image(strand,strandX + width,0);
 
+  
   if (keyIsDown(RIGHT_ARROW)) {
-    strandX++;
+    strandX+=5;
+    
+     
   }
   else {
-    strandX--; 
+    strandX-=5;
   }
   text("strandX=" + strandX,20,20);
 }

@@ -35,4 +35,27 @@ function setup() {
 function draw() {
   background('lavender');
   image(spriteSheet,x,y,br,ho,(frameCount % aantalSpriteKolommen)*sBr,rij*sHo,sBr,sHo);
+
+    if(keyIsDown(40))
+    {
+        rij = 0;
+        y+=10;
+    }
+    else if (keyIsDown(38))
+    {
+         rij = 3;
+         y-=10;
+    }
+
+    if (keyIsDown(37))
+    {
+        rij = 1;
+        x-=10;
+    }
+    else if (keyIsDown(39))
+    {
+        rij = 2;
+        x+=10;
+    }
+
 }
