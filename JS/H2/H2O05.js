@@ -3,8 +3,8 @@ var aantalKolommenRaster = 9;
 var celGrootte;
 
 var spriteJos;
-var xJos;
-var yJos;
+var xJos = 400;
+var yJos = 300;
 
 function preload() {
   brug = loadImage("images/backgrounds/dame_op_brug_1800.jpg");
@@ -18,8 +18,9 @@ function setup() {
 }
 
 function draw() {
-  
+  background(brug);
   tekenRaster();
+  image(spriteJos,xJos,yJos);
 }
 
 function tekenRaster() {
@@ -31,8 +32,12 @@ function tekenRaster() {
   HINT: je kunt terugkijken naar het raster dat je in H1 hebt gemaakt.
   Maak gebruik van de variabelen die bovenaan zijn gedeclareerd.
   */
-  
-      rect(4*celGrootte,2*celGrootte,celGrootte,celGrootte);
-
+  for (i = 0; i<aantalRijenRaster; i++)
+  {
+      for (n = 0; n<aantalKolommenRaster; n++)
+      {
+          rect(n*celGrootte,i*celGrootte,celGrootte,celGrootte);
+      }
+  } 
   pop();
 }
