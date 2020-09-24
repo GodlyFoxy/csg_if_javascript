@@ -53,7 +53,7 @@ var eiland = {
 
     teken() {
         fill(this.colour);
-        stroke("black")
+        stroke("black");
         ellipse(this.x, this.y, this.diameter);
     },
     wordtBezocht(obj){
@@ -61,9 +61,10 @@ var eiland = {
         //text(dist(obj.x,obj.y,this.x,this.y) - this.diameter/2 - obj.diameter/2, 50,50); //laat afstand tussen rand van eiland en object zien, er van uitgaan dat object cirkel is
 
         if( dist(obj.x,obj.y,this.x,this.y) - this.diameter/2 - obj.diameter/2 <= 0)
-        [
-            this.colour = '#C2B280'
-        ]
+        {
+            this.colour = '#C2B280';
+        }
+        else this.colour = 'darkgreen';
 
     }
 }

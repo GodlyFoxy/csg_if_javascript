@@ -1,0 +1,26 @@
+2. klik cirkels binnen bepaalde tijd
+3.  Speler: ik
+    interatctie/keuze: klik voor dat eerste bal grond raakt om cirkel toe te voegen
+    spelregels: alle ballen weg is win
+    uitdaging/doel/competitie: ^
+    resultaat/score/uitkomst: score links boven, resultaat is win scherm
+    voortgang: nee
+    levels: nee
+    terugkoppeling: score, aantal ballen links boven
+    abstractie: geen idee
+    emotie van speler: boos
+4. 
+    A. ja
+    B. nee
+    C. ja
+5.
+    muis ingedrukt houden en ballen over elkaar
+6.
+    Controleren op wanneer je 1 keer klikt of muis loslaat.
+    niet op elkaar laten plaatsen.
+7. 
+    hit registratie
+    beter eindscherm
+    herstart konpje
+    
+    

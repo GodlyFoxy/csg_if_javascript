@@ -141,7 +141,7 @@ function setup() {
 
     bob = new Vijand(600,300);
     bob.stapGrootte = 1 * eve.stapGrootte;
-    alice.sprite = loadImage("images/sprites/Bob100px/Bob.png");
+    bob.sprite = loadImage("images/sprites/Bob100px/Bob.png");
 
 }
 
@@ -155,7 +155,7 @@ function draw() {
     alice.toon();
     bob.toon();
 
-    if (eve.wordtGeraakt(alice)) {
+    if (eve.wordtGeraakt(alice) || eve.wordtGeraakt(bob)) {
         noLoop();
     }
 
